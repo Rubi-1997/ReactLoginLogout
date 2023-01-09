@@ -1,0 +1,106 @@
+.registerForm{
+
+
+    /* width: 20rem;
+    height: 32rem; */
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 6px;
+   
+    
+}
+
+*{
+    font-size:15px;
+}
+.Toastify__toast{
+    width:28rem;
+    height: 0.5rem;
+    display: flex;
+   
+    justify-content:space-around;
+    margin-bottom: 2rem;
+}
+.Inpt{
+    width: 19rem;
+    height: 23px;
+    /* border: purple; */
+    margin-top: 7px;
+    margin-bottom: 8px;
+   border-radius: 4px;
+   font-size: 10px!important;
+}
+/* .Inpt:hover{
+    border:2px rgb(77, 136, 204);
+} */
+.RegisterContainer{
+    text-align: left;
+    
+
+}
+.registerbutton{
+    width: 5.4rem;
+    height: 33px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #651d6b;
+    color: white;
+    border-radius: 7px;
+}
+.registerbutton:hover{
+    background-color: white;
+    color: #651d6b;
+    cursor: pointer;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #353232;
+     padding: 10px;
+
+}
+span{
+    color: rgb(226, 20, 20);
+    font-size: 10px;
+    margin-bottom:4px ;
+}
+input:invalid span{
+    display: block;
+}
+@media (max-width:500px) {
+    .registerForm {
+        width:16rem;
+    }
+    .Inpt{
+        width:16rem;
+        height: 18px;
+        font-size:13px;
+    }
+    .container1{
+        width: 25rem;
+    }
+    .registerbutton {
+        width: 6.4rem;
+        height:28px;
+    }
+  
+   
+   .label{
+    font-size: 5px!important;
+   }
+
+ }
+ .box{
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 5rem;
+ }
+ 
