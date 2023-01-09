@@ -1,11 +1,12 @@
 .login{
     color: rgb(110 73 143);
-    background-color: #cfcbcb;
+    background-color: white;
     width: 19rem;
     height: 28rem;
     border-radius: 8px;
     text-align: left;
-    padding-left: 10px;
+    padding: 19px;
+    box-shadow: 2px 4px 2px 4px;
     
    
 }
@@ -18,7 +19,7 @@
     align-items: center;
     justify-content: center;
     height:37rem;
-    /* background-image: linear-gradient(rgb(95 14 95),rgb(130 61 169),rgb(25 4 37)); */
+   
 
 }
 .disply{
@@ -29,6 +30,8 @@
     height:28px;
     border:none;
     background-color: whitesmoke;
+    font-size: 12px;
+    border-radius: 4px;
 }
 .submitinput{
     margin-top: 2rem;
@@ -38,6 +41,7 @@
     height: 45px;
     color: rgb(218 219 225);
     cursor: pointer;
+    border-radius: 4px;
    
 }
 img{
@@ -54,7 +58,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-left: 2rem; */
     margin-right: 1rem;
 }
 .bigDisply{
@@ -69,10 +72,28 @@ input[type="text"]:focus, input[type="password"]:focus{
     outline: none;
 }
 @media (max-width:500px) {
-    /* .container{
-        width:30rem;
-    } */
-    *{
-        font-size: 13px;
+   
+    .textInput{
+        font-size: 9px;
+        width: 15rem;
+    }
+    .login{
+        color: rgb(110 73 143);
+    background-color: white;
+    width: 16rem;
+    height: 27rem;
+    border-radius: 8px;
+    text-align: left;
+    padding: 19px;
+    box-shadow: 2px 4px 2px 4px;
+    }
+    .submitinput {
+        margin-top: 2rem;
+        background-color: #723499;
+        border: none;
+        width: 16rem;
+        height: 32px;
+        color: rgb(218 219 225);
+        cursor: pointer;
     }
 }
