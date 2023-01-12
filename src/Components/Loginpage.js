@@ -38,13 +38,12 @@ const Loginpage = () => {
   const handlelogin = (e) => {
 
     // this is use for peventing by event onclick auto refresh
-      e.preventDefault();
+    e.preventDefault();
 
 
-      //  check key exist in localStorage or not for when user directly login and no one registered  initially
+    //  check key exist in localStorage or not for when user directly login and no one registered  initially
     if ("data" in localStorage) {
       const information = JSON.parse(localStorage.getItem("data"))
-      console.log(information)
 
       // check when data key contain obj blank email and password are not entered their field
       if (values.email === "" && values.password === "") {
@@ -54,40 +53,28 @@ const Loginpage = () => {
       else {
         // using foreach for check every element exiat in information
         information.forEach(element => {
-          console.log(element.email)
-          console.log(values.email)
 
-          //  check if email and password  values are blank then user are not registered
-          if (element.email === "" && element.password === "") {
-            alert("you are not resistered")
+          // login values aur Register(localStorage contain) email password values  are matched 
+          if (element.email === values.email && element.password === values.password) {
+            Navigate("/breedslist")
           }
-
-          // email and password  values are not blank then user registered then check for next condition
-          else {
-
-              // login values aur Register(localStorage contain) email password values  are matched 
-            if (element.email === values.email && element.password === values.password) {
-              // navigate towards breeds list
-              Navigate("/breedslist")
-            }
           // password not matched but email matched then showing wrong password
-            else if (element.email === values.email && element.password !== values.password) {
-              alert('Your password is wrong')
-            }
-
-            //  when email not matched then user not registered
-            else {
-              alert(' your account has not been registered')
-            }
+          else if (element.email === values.email && element.password !== values.password) {
+            alert('Your password is wrong')
           }
 
-
-
+          //  when email not matched then user not registered
+          else if (element.email !== values.email && element.password === values.password) {
+            alert('You are not registered ')
+          }
+          else {
+            alert(" You are not registered")
+          }
         });
 
       }
 
-    } 
+    }
     //  localStorage contain does not contain key so no one has registered
     else {
       alert("you are not resister")

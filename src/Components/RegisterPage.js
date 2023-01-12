@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import './RegisterPage.css'
-import { toast, ToastContainer } from "react-toastify"
-import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 
@@ -63,10 +61,11 @@ const RegisterPage = () => {
                 console.log(Array)
                 let variable = JSON.stringify(Array)
                 localStorage.setItem('data', variable);
+                alert("register successfully")
                 Navigate("/login")
 
         //  use React toastify for notification
-                toast.success("register successfully")
+               
             }
            
             
@@ -94,8 +93,9 @@ const RegisterPage = () => {
                             else{
                                 old_data.push(new_data);
                                 localStorage.setItem('data', JSON.stringify(old_data));
+                                alert("register successfully")
                                 Navigate("/login")
-                                // alert("register successfully")
+                                
                             }
                         }
                     });
@@ -144,7 +144,7 @@ const RegisterPage = () => {
                 </div>
                 <div>Already have an account?<Link to="/login">Login</Link></div>
                 <button type='submit' className='registerbutton' onClick={handleStore}>Register</button>
-                <ToastContainer position='top-center' />
+                
                 
             </form>
         </div>

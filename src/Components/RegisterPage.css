@@ -1,9 +1,4 @@
 .registerForm{
-
-
-    /* width: 20rem;
-    height: 32rem; */
-    
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 6px;
@@ -14,26 +9,16 @@
 *{
     font-size:15px;
 }
-.Toastify__toast{
-    width:28rem;
-    height: 0.5rem;
-    display: flex;
-   
-    justify-content:space-around;
-    margin-bottom: 2rem;
-}
+
 .Inpt{
     width: 19rem;
     height: 23px;
-    /* border: purple; */
     margin-top: 7px;
     margin-bottom: 8px;
    border-radius: 4px;
    font-size: 10px!important;
 }
-/* .Inpt:hover{
-    border:2px rgb(77, 136, 204);
-} */
+
 .RegisterContainer{
     text-align: left;
     
@@ -95,6 +80,7 @@ input:invalid span{
    .label{
     font-size: 5px!important;
    }
+  
 
  }
  .box{
